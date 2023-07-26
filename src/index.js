@@ -35,7 +35,6 @@ const runApp = () => {
       logOperatorHasBeenReset();
       logListOfAvailableOperators();
     } else if (chosenOperator) {
-      console.log(chosenOperator);
       const operatorClass = operatorProps[chosenOperator].class;
       const operator = new operatorClass(lowerCasedConsoleInput, chosenOperator);
       operator.execute();
